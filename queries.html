@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>SPEC - Online Sales Management System | Home</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/login.svg" alt="login-logo" class="logo">
+        </div>
+        <div class="col-10">
+          <h1>SPEC - ONLINE SALES MANAGEMENT SYSTEM</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+      <a class="nav-link" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html">Contact Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="queries.html">Any Queries</a>
+    </li>
+  </ul>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="welcome">Welcome, Admin</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-2">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="addproduct.html">Add Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productreport1.html">Product Report</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-10">
+        <form action="querysuccess.html">
+
+          <div class="form-group">
+            <label for="queryTextArea">Write your query/problem:</label>
+            <textarea class="form-control" id="queryTextArea" rows="3" minlength="10" maxlength="50" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="emailInput">Email ID:</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number (starting with 7, 8 or 9):</label>
+            <input type="tel" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="" minlength="10" maxlength="10" required pattern="[7-9]{1}[0-9]{9}">
+          </div>
+
+          <div class="form-group row">
+            <div class="col-sm-10">
+              <button type="submit" class="btn btn-primary" onClick="return validateQuery();">Post the Query</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">Copyright @ 2014 Noor Anisah Binte Johari_1887937</div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    <a href='https://www.freepik.com/vectors/banner'>Banner vector created by Kerfin7 - www.freepik.com</a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
