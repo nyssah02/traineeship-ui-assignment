@@ -1,1 +1,129 @@
+/************* Main *************/
+body {
+  background-color: #f7d1ba;
+  color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  font-family: 'Karla', sans-serif;
+}
 
+h1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 150px;
+  font-size: 2rem;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  padding-top: 30px;
+  color: #557571;
+}
+
+form {
+  margin: 50px;
+}
+
+a {
+  color: #799e99;
+}
+
+a:hover {
+  color: #344845;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+}
+
+.welcome {
+  text-align: right;
+  position: relative;
+  right: 0;
+  color: #405754;
+  font-size: 12px;
+}
+
+.container {
+
+  margin: 10px
+}
+
+.table {
+  margin: 10px;
+}
+
+.flex-column {
+  margin: 10px;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: #d49a89;
+}
+
+.btn-primary {
+  background-color: #d49a89;
+  border-color: #cf8e7b;
+}
+
+.btn-primary:hover {
+  background-color: #557571;
+  border-color: #cf8e7b;
+}
+
+.page-item.active .page-link {
+  background-color: #d49a89;
+  border-color: #cf8e7b;
+}
+
+.page-link {
+  color: #557571;
+}
+
+.table .thead-dark th {
+  background-color: #557571;
+  border-color: #405754;
+}
+
+
+/************* Login Page *************/
+.err {
+  color: red;
+}
+
+/************* Home *************/
+.sale-image {
+  width: 300px;
+}
+
+.sale-images {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/************* Product Report *************/
+/************* Queries *************/
+/************* Success Pages *************/
+.success-message {
+  color: green;
+  padding-top: 30px;
+}
+
+/************* Footer *************/
+footer {
+  text-align: center;
+  color: grey;
+  font-size: 0.8rem;
+  padding: 50px;
+}
